@@ -1424,9 +1424,7 @@ See [LICENSE](LICENSE) file for details
 <a href="https://github.com/Wdrobi/Network-Anomaly-Detection-Using-Ensemble-Machine-Learning-Methods-/commits?author=Wdrobi" title="Documentation">📖</a>
 <a href="#research" title="Research">🔬</a>
 </td>
-</tr>
 
-<tr>
 <td align="center">
 <a href="https://github.com/anaArifa">
 <img src="https://github.com/anaArifa.png" width="100px;" alt=""/><br />
