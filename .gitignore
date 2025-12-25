@@ -52,10 +52,6 @@ models/*.pkl
 models/*.h5
 models/*.pth
 
-# Results (can be regenerated)
-results/*.png
-results/*.txt
-results/*.csv
 
 # Logs
 *.log

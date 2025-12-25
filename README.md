@@ -1428,8 +1428,8 @@ See [LICENSE](LICENSE) file for details
 </table>
 
 **Data Mining Lab Project**  
+Department of CSE
 Green University of Bangladesh  
-9th Semester
 
 </div>
 
@@ -1441,10 +1441,10 @@ Green University of Bangladesh
 
 Special thanks to:
 
-- 📚 **NSL-KDD Dataset** - University of New Brunswick (UNB)
-- 🎓 **Green University** - For academic support
-- 🔬 **Research Community** - For foundational papers
-- 💻 **Open Source Community** - For amazing tools
+  📚 **NSL-KDD Dataset** - University of New Brunswick (UNB)
+  🎓 **Green University** - For academic support
+  🔬 **Research Community** - For foundational papers
+  💻 **Open Source Community** - For amazing tools
 
 </div>
 
@@ -1481,8 +1481,8 @@ Special thanks to:
 ### 💬 Get in Touch
 
 [![GitHub](https://img.shields.io/badge/GitHub-Wdrobi-181717?style=for-the-badge&logo=github)](https://github.com/Wdrobi)
-[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/yourprofile)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:md.robiulislam.qcsc@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/wdrobi)
 
 ### 🌟 Show Your Support
 
@@ -1509,6 +1509,6 @@ If this project helped you, please ⭐ star the repository!
 
 **Made with ❤️ and ☕ by [Wdrobi](https://github.com/Wdrobi)**
 
-**© 2024 Network Anomaly Detection Project. All rights reserved.**
+**© 2025 Network Anomaly Detection Project. All rights reserved.**
 
 </div>

@@ -1,0 +1,29 @@
+
+================================================================================
+ANOMALY DETECTION - MODEL COMPARISON SUMMARY
+================================================================================
+
+BEST PERFORMERS:
+--------------------------------------------------------------------------------
+  • Best Accuracy: Isolation Forest (0.5611)
+  • Best Precision: Isolation Forest (0.7121)
+  • Best Recall: Isolation Forest (0.1476)
+  • Best F1-Score: Isolation Forest (0.2446)
+  • Best ROC-AUC: LOF (0.5437)
+
+--------------------------------------------------------------------------------
+DETAILED COMPARISON:
+--------------------------------------------------------------------------------
+                             Model  Accuracy Precision    Recall  F1-Score   ROC-AUC
+Isolation Forest  Isolation Forest  0.561137  0.712116  0.147625  0.244553  0.152442
+LOF                            LOF  0.480811  0.309997  0.064437  0.106696   0.54373
+AE Baseline            AE Baseline  0.524004  0.649805  0.023368  0.045114  0.400521
+
+================================================================================
+RECOMMENDATIONS:
+--------------------------------------------------------------------------------
+  • For balanced performance: Use Isolation Forest
+  • For low false alarms: Use Isolation Forest
+  • For detecting anomalies: Use Isolation Forest
+
+================================================================================

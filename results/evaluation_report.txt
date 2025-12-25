@@ -1,0 +1,51 @@
+================================================================================
+ANOMALY DETECTION - EVALUATION REPORT
+================================================================================
+
+
+Isolation Forest
+--------------------------------------------------------------------------------
+Accuracy:  0.5611
+Precision: 0.7121
+Recall:    0.1476
+F1-Score:  0.2446
+ROC-AUC:   0.8475583127123367
+
+Confusion Matrix:
+  TP: 2110, FP: 853
+  FN: 12183, TN: 14558
+
+
+LOF
+--------------------------------------------------------------------------------
+Accuracy:  0.4808
+Precision: 0.3100
+Recall:    0.0644
+F1-Score:  0.1067
+ROC-AUC:   0.45626963393825215
+
+Confusion Matrix:
+  TP: 921, FP: 2050
+  FN: 13372, TN: 13361
+
+
+AE Baseline
+--------------------------------------------------------------------------------
+Accuracy:  0.5240
+Precision: 0.6498
+Recall:    0.0234
+F1-Score:  0.0451
+ROC-AUC:   0.4005214423247479
+
+Confusion Matrix:
+  TP: 334, FP: 180
+  FN: 13959, TN: 15231
+
+
+================================================================================
+SUMMARY & RECOMMENDATIONS
+================================================================================
+Compare the F1-scores and ROC-AUC values to identify the best model.
+Consider the balance between precision and recall based on your use case.
+Precision is critical when false alarms are costly.
+Recall is critical when missing anomalies is dangerous.
