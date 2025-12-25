@@ -19,14 +19,14 @@
 <img src="https://raw.githubusercontent.com/Wdrobi/Network-Anomaly-Detection-Using-Ensemble-Machine-Learning-Methods-/main/project_structure.png" alt="Project Structure" width="600"/>
 
 <<<<<<< HEAD
-- Python 3.7+
-- NumPy - Numerical computing
-- Pandas - Data manipulation
-- Scikit-Learn - Machine learning algorithms
-- TensorFlow/Keras - Deep learning framework
-- Matplotlib - Plotting library
-- Seaborn - Statistical visualization
-- SciPy - Scientific computing
+ Python 3.7+ <br>
+ NumPy - Numerical computing <br>
+ Pandas - Data manipulation <br>
+ Scikit-Learn - Machine learning algorithms <br>
+ TensorFlow/Keras - Deep learning framework <br>
+ Matplotlib - Plotting library <br>
+ Seaborn - Statistical visualization <br>
+ SciPy - Scientific computing <br>
 
 Install dependencies:
 ```bash
@@ -52,10 +52,10 @@ pip install -r requirements.txt
 ```
 
 ### 3. Prepare Dataset
-- Download NSL-KDD dataset from: https://www.kaggle.com/datasets/hassan06/nslkdd
-- Place the following files in the `data/` directory:
-  - `KDDTrain+.csv`
-  - `KDDTest+.csv`
+ Download NSL-KDD dataset from: https://www.kaggle.com/datasets/hassan06/nslkdd <br>
+ Place the following files in the `data/` directory: <br>
+   `KDDTrain+.csv` <br>
+   `KDDTest+.csv`
 
 ## Usage
 
@@ -1059,7 +1059,7 @@ Network-Anomaly-Detection/
 
 #### 🎯 Anomaly Scores
 
-<img src="https://raw.githubusercontent.com/Wdrobi/Network-Anomaly-Detection-Using-Ensemble-Machine-Learning-Methods-/main/results/anomaly_scores_distribution.png" width="100%" />
+<img src="https://raw.githubusercontent.com/Wdrobi/Network-Anomaly-Detection-Using-Ensemble-Machine-Learning-Methods-/main/results/anomaly_scores.png" width="100%" />
 
 **Score distribution** showing clear separation between normal and anomalous samples.
 
@@ -1441,9 +1441,9 @@ Green University of Bangladesh
 
 Special thanks to:
 
-  📚 **NSL-KDD Dataset** - University of New Brunswick (UNB)
-  🎓 **Green University** - For academic support
-  🔬 **Research Community** - For foundational papers
+  📚 **NSL-KDD Dataset** - University of New Brunswick (UNB)<br>
+  🎓 **Green University** - For academic support <br>
+  🔬 **Research Community** - For foundational papers <br>
   💻 **Open Source Community** - For amazing tools
 
 </div>
