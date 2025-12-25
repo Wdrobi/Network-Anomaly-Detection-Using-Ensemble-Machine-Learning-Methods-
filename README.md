@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Prepare Dataset
-- Download NSL-KDD dataset from: https://www.unb.ca/cic/datasets/nsl-kdd.html](https://www.kaggle.com/datasets/hassan06/nslkdd
+- Download NSL-KDD dataset from: https://www.kaggle.com/datasets/hassan06/nslkdd
 - Place the following files in the `data/` directory:
   - `KDDTrain+.csv`
   - `KDDTest+.csv`
