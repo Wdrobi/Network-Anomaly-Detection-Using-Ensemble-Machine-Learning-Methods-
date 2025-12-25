@@ -1,0 +1,9 @@
+However, here are some valuable enhancements you could add for a stronger project:
+
+Feature Importance Analysis - Identify which features contribute most to anomaly detection
+Cross-Validation - K-fold CV for more robust evaluation
+Anomaly Score Visualizations - Show score distributions by model
+Threshold Optimization - Find optimal decision thresholds per model
+Prediction API - Flask/FastAPI endpoint to detect anomalies on new data
+Model Interpretability - SHAP values to explain individual predictions
+Performance Benchmarking - Timing analysis and computational resource comparison
