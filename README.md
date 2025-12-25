@@ -65,27 +65,27 @@ python main.py
 ```
 
 This will:
-1. Load and preprocess the NSL-KDD dataset
-2. Perform exploratory data analysis with visualizations
-3. Train Isolation Forest, LOF, and Deep Autoencoder models
-4. Evaluate all models with comprehensive metrics
-5. Generate comparison visualizations and reports
-6. Save all results and trained models
+   Load and preprocess the NSL-KDD dataset<br>
+   Perform exploratory data analysis with visualizations<br>
+   Train Isolation Forest, LOF, and Deep Autoencoder models<br>
+   Evaluate all models with comprehensive metrics<br>
+   Generate comparison visualizations and reports<br>
+   Save all results and trained models
 
 ### Output Files
 After execution, you'll find:
-- **Models**: `models/isolation_forest_model.pkl`, `models/lof_model.pkl`, `models/autoencoder_model.h5`
-- **Reports**: `results/evaluation_report.txt`, `results/eda_report.txt`
-- **Visualizations**: 
-  - `class_distribution.png` - Class imbalance visualization
-  - `pca_visualization.png` - PCA projection of traffic
-  - `tsne_visualization.png` - t-SNE projection
-  - `confusion_matrices.png` - Confusion matrices for all models
-  - `roc_curves.png` - ROC curve comparison
-  - `anomaly_scores.png` - Anomaly score distributions
-  - `reconstruction_error_deep_autoencoder.png` - Autoencoder error analysis
-  - `model_comparison.png` - Performance metrics comparison
-  - `pca_anomalies.png` - Detected anomalies in PCA space
+ **Models**: `models/isolation_forest_model.pkl`, `models/lof_model.pkl`, `models/autoencoder_model.h5` <br>
+ **Reports**: `results/evaluation_report.txt`, `results/eda_report.txt` <br>
+ **Visualizations**:<br>
+   `class_distribution.png` - Class imbalance visualization<br>
+   `pca_visualization.png` - PCA projection of traffic<br>
+   `tsne_visualization.png` - t-SNE projection<br>
+   `confusion_matrices.png` - Confusion matrices for all models<br>
+   `roc_curves.png` - ROC curve comparison<br>
+   `anomaly_scores.png` - Anomaly score distributions<br>
+   `reconstruction_error_deep_autoencoder.png` - Autoencoder error analysis<br>
+   `model_comparison.png` - Performance metrics comparison<br>
+   `pca_anomalies.png` - Detected anomalies in PCA space
 
 ## Module Documentation
 
@@ -93,118 +93,118 @@ After execution, you'll find:
 Handles data loading, cleaning, encoding, and scaling.
 
 **Key Methods:**
-- `load_nsl_kdd_dataset()` - Load NSL-KDD CSV files
-- `handle_missing_values()` - Clean missing data
-- `encode_categorical_features()` - Encode categorical variables
-- `scale_numerical_features()` - Normalize numerical features
-- `preprocess_pipeline()` - Complete preprocessing workflow
+ `load_nsl_kdd_dataset()` - Load NSL-KDD CSV files<br>
+ `handle_missing_values()` - Clean missing data<br>
+ `encode_categorical_features()` - Encode categorical variables<br>
+ `scale_numerical_features()` - Normalize numerical features<br>
+ `preprocess_pipeline()` - Complete preprocessing workflow
 
 ### EDAAnalyzer (eda.py)
 Performs exploratory data analysis and generates insights.
 
 **Key Methods:**
-- `analyze_class_distribution()` - Visualize class imbalance
-- `analyze_feature_distribution()` - Plot feature distributions
-- `analyze_correlation_matrix()` - Create correlation heatmap
-- `perform_pca_analysis()` - PCA dimensionality reduction
-- `perform_tsne_analysis()` - t-SNE visualization
-- `generate_eda_report()` - Create comprehensive EDA report
+ `analyze_class_distribution()` - Visualize class imbalance<br>
+ `analyze_feature_distribution()` - Plot feature distributions<br>
+ `analyze_correlation_matrix()` - Create correlation heatmap<br>
+ `perform_pca_analysis()` - PCA dimensionality reduction<br>
+ `perform_tsne_analysis()` - t-SNE visualization<br>
+ `generate_eda_report()` - Create comprehensive EDA report
 
 ### IsolationForestAnomalyDetector (isolation_forest_model.py)
 Tree-based anomaly detection using Isolation Forest.
 
 **Key Methods:**
-- `fit()` - Train on data
-- `predict()` - Detect anomalies
-- `get_anomaly_scores()` - Get anomaly scores
-- `save_model()` / `load_model()` - Model persistence
+ `fit()` - Train on data<br>
+ `predict()` - Detect anomalies<br>
+ `get_anomaly_scores()` - Get anomaly scores<br>
+ `save_model()` / `load_model()` - Model persistence<br>
 
 ### LOFAnomalyDetector (lof_model.py)
 Density-based anomaly detection using Local Outlier Factor.
 
 **Key Methods:**
-- `fit_predict()` - Train and predict in one step
-- `get_lof_scores()` - Get outlier factor scores
-- `save_model()` / `load_model()` - Model persistence
+ `fit_predict()` - Train and predict in one step<br>
+ `get_lof_scores()` - Get outlier factor scores<br>
+ `save_model()` / `load_model()` - Model persistence
 
 ### DeepAutoencoder (autoencoder_model.py)
 Neural network autoencoder for unsupervised anomaly detection.
 
 **Key Methods:**
-- `build_model()` - Create encoder-decoder architecture
-- `train()` - Train on normal data only
-- `set_threshold()` - Set anomaly detection threshold
-- `predict()` - Detect anomalies based on reconstruction error
-- `save_model()` / `load_model()` - Model persistence
+ `build_model()` - Create encoder-decoder architecture<br>
+ `train()` - Train on normal data only<br>
+ `set_threshold()` - Set anomaly detection threshold<br>
+ `predict()` - Detect anomalies based on reconstruction error<br>
+ `save_model()` / `load_model()` - Model persistence
 
 ### ModelEvaluator (evaluation.py)
 Comprehensive model evaluation and comparison.
 
 **Key Methods:**
-- `compute_metrics()` - Calculate accuracy, precision, recall, F1, ROC-AUC
-- `compute_confusion_matrix()` - Generate confusion matrix
-- `get_roc_curve()` - Calculate ROC curve
-- `compare_models()` - Comparative analysis
-- `generate_evaluation_report()` - Create evaluation report
+ `compute_metrics()` - Calculate accuracy, precision, recall, F1, ROC-AUC<br>
+ `compute_confusion_matrix()` - Generate confusion matrix<br>
+ `get_roc_curve()` - Calculate ROC curve<br>
+ `compare_models()` - Comparative analysis<br>
+ `generate_evaluation_report()` - Create evaluation report
 
 ### ResultVisualizer (visualization.py)
 Create publication-quality visualizations.
 
 **Key Methods:**
-- `plot_confusion_matrices()` - Compare confusion matrices
-- `plot_roc_curves()` - Plot ROC curves
-- `plot_anomaly_scores()` - Visualize anomaly scores
-- `plot_reconstruction_error()` - Plot reconstruction error distribution
-- `plot_model_comparison()` - Compare model performance
-- `plot_pca_anomalies()` - Show anomalies in PCA space
+ `plot_confusion_matrices()` - Compare confusion matrices<br>
+ `plot_roc_curves()` - Plot ROC curves<br>
+ `plot_anomaly_scores()` - Visualize anomaly scores<br>
+ `plot_reconstruction_error()` - Plot reconstruction error distribution<br>
+ `plot_model_comparison()` - Compare model performance<br>
+ `plot_pca_anomalies()` - Show anomalies in PCA space
 
 ## Performance Metrics Explained
 
 ### Confusion Matrix
-- **True Positives (TP)**: Correctly identified anomalies
-- **True Negatives (TN)**: Correctly identified normal traffic
-- **False Positives (FP)**: Normal traffic misidentified as anomalies
-- **False Negatives (FN)**: Anomalies missed by the model
+ **True Positives (TP)**: Correctly identified anomalies<br>
+ **True Negatives (TN)**: Correctly identified normal traffic<br>
+ **False Positives (FP)**: Normal traffic misidentified as anomalies<br>
+ **False Negatives (FN)**: Anomalies missed by the model
 
 ### Key Metrics
-- **Accuracy**: (TP + TN) / Total
-- **Precision**: TP / (TP + FP) - Reliability of positive predictions
-- **Recall**: TP / (TP + FN) - Ability to find all anomalies
-- **F1-Score**: Harmonic mean of precision and recall
-- **ROC-AUC**: Area under the Receiver Operating Characteristic curve
+ **Accuracy**: (TP + TN) / Total <br>
+ **Precision**: TP / (TP + FP) - Reliability of positive predictions <br>
+ **Recall**: TP / (TP + FN) - Ability to find all anomalies <br>
+ **F1-Score**: Harmonic mean of precision and recall <br>
+ **ROC-AUC**: Area under the Receiver Operating Characteristic curve
 
 ### Trade-offs
-- **High Precision**: Fewer false alarms but may miss anomalies
-- **High Recall**: Catches most anomalies but more false alarms
-- Choose based on use case: Cost of false positives vs false negatives
+ **High Precision**: Fewer false alarms but may miss anomalies <br>
+ **High Recall**: Catches most anomalies but more false alarms <br>
+ Choose based on use case: Cost of false positives vs false negatives
 
 ## Configuration & Parameters
 
 ### Isolation Forest
-- `contamination=0.1` - Expected anomaly proportion
-- `n_estimators=100` - Number of trees
-- Adjust contamination based on expected anomaly rate
+ `contamination=0.1` - Expected anomaly proportion <br>
+ `n_estimators=100` - Number of trees<br>
+ Adjust contamination based on expected anomaly rate
 
 ### LOF
-- `n_neighbors=20` - Neighbors for local density calculation
-- `contamination=0.1` - Expected anomaly proportion
-- Increase n_neighbors for smoother boundaries
+ `n_neighbors=20` - Neighbors for local density calculation <br>
+ `contamination=0.1` - Expected anomaly proportion <br>
+ Increase n_neighbors for smoother boundaries
 
 ### Deep Autoencoder
-- `encoding_dim=8` - Latent space dimension
-- `learning_rate=0.001` - Adam optimizer learning rate
-- `epochs=50` - Training iterations
-- `percentile=95` - Threshold percentile for anomaly detection
-- Adjust architecture for better performance
+ `encoding_dim=8` - Latent space dimension <br>
+ `learning_rate=0.001` - Adam optimizer learning rate <br>
+ `epochs=50` - Training iterations <br>
+ `percentile=95` - Threshold percentile for anomaly detection <br>
+ Adjust architecture for better performance
 
 ## Tips for Best Results
 
-1. **Data Quality**: Ensure NSL-KDD dataset is properly downloaded
-2. **Feature Scaling**: Use StandardScaler for numerical features
-3. **Categorical Encoding**: Use LabelEncoder for categorical variables
-4. **Class Imbalance**: Adjust contamination parameter to reflect actual anomaly rate
-5. **Threshold Tuning**: Experiment with reconstruction error percentiles
-6. **Cross-validation**: Consider implementing k-fold validation
+ **Data Quality**: Ensure NSL-KDD dataset is properly downloaded <br>
+ **Feature Scaling**: Use StandardScaler for numerical features<br>
+ **Categorical Encoding**: Use LabelEncoder for categorical variables<br>
+ **Class Imbalance**: Adjust contamination parameter to reflect actual anomaly rate <br>
+ **Threshold Tuning**: Experiment with reconstruction error percentiles <br>
+ **Cross-validation**: Consider implementing k-fold validation
 
 ## Extending the Project
 
@@ -226,27 +226,27 @@ Combine predictions from multiple models for improved performance.
 ## Troubleshooting
 
 ### Out of Memory Error
-- Reduce batch size in autoencoder training
-- Use data subset for t-SNE analysis
-- Process data in chunks
+ Reduce batch size in autoencoder training<br>
+ Use data subset for t-SNE analysis<br>
+ Process data in chunks
 
 ### Slow t-SNE
-- Use smaller dataset subset
-- Reduce perplexity parameter
-- Use approximate t-SNE (openTSNE library)
+ Use smaller dataset subset<br>
+ Reduce perplexity parameter<br>
+ Use approximate t-SNE (openTSNE library)
 
 ### Poor Model Performance
-- Adjust contamination parameter
-- Experiment with different preprocessing techniques
-- Tune model hyperparameters
-- Ensure quality dataset
+ Adjust contamination parameter<br>
+ Experiment with different preprocessing techniques<br>
+ Tune model hyperparameters<br>
+ Ensure quality dataset
 
 ## References
 
-- Gogoi et al. (2012). NSL-KDD Dataset
-- Liu et al. (2008). Isolation Forest - IEEE ICDM
-- Breunig et al. (2000). LOF - ACM SIGMOD
-- Hinton & Salakhutdinov (2006). Autoencoders
+ Gogoi et al. (2012). NSL-KDD Dataset<br>
+ Liu et al. (2008). Isolation Forest - IEEE ICDM<br>
+ Breunig et al. (2000). LOF - ACM SIGMOD<br>
+ Hinton & Salakhutdinov (2006). Autoencoders
 
 ## Author Notes
 
@@ -1428,7 +1428,7 @@ See [LICENSE](LICENSE) file for details
 </table>
 
 **Data Mining Lab Project**  
-Department of CSE
+Department of CSE <br>
 Green University of Bangladesh  
 
 </div>
